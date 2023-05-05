@@ -3,63 +3,105 @@
 	padding:0;
 	box-sizing:border-box;
 }
-
+body{
+	background: rgb(30,29,48);
+	font-family: Helvetica, Arial, sans-serif;
+}
 header{
 	width:100%;
-	transform: translate(capital);
+	height: 100px;
 	color:white;
-	background:chocolate;
+	background:rgb(69,51,19);
 	text-align: center;
+	padding: 20px;
 }
-navbar{
+header h1{
+	width: 100%;
+	height: auto;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+.manu{
 	display: flex;
+	justify-content:stretch;
+	align-items: center;
 	width:100%;
-	height:auto;
+	height:90px;
+	margin-left: 6rem;
 }
-navbar li{
-	display:inline;
-	justify-content:space-evenly;
+.manu li{
+	max-width: 100%;
+	display:inline-block;
+	flex-direction: column;
+	flex-wrap:wrap;
+	justify-content: center;
 	align-items: center;
 	list-style:none;
-	color:white;
-	border-radius:5px;
-}
-navbar li a{
-	width: 2rem;
 	background: green;
 	font-family: San sarif;
-	font-size: 16px;
+	font-size: 30px;
+	color: white;
+	text-transform: uppercase;	
+	padding: 10px, 20px;
+	border-radius: 5px;
 }
-navbar search input{
-	width:50%;
-	text-align:start;
+.manu li:hover{
+	background: rbg(195,197,36);
+	color: black;
+	text-shadow: 2px;
 }
-main{
-	display:flex;
+.manu input{
 	width:100%;
-	height:80vh;
-	background-color:skyblue;
-	margin:15px;
+	text-align:start;
+	margin-left: 20px;
+	font-size: 17px;
+	padding: 6px;
+	outline: none;
+	border: none;
+	border-radius: 2px;
 }
-main h3{
+.manu input::placeholder{
+	color:darkgray;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+.manu input:hover{
+	color: transparent;
+}
+.content{
+	width:100%;
+	height:500px;
+	text-align: center;
+	background-color:rgb(116,97,225);
+	margin:5px;
+	padding: 10px;
+}
+.content h3{
+	margin-top: 1rem;
 	color:lightgray;
-	transform: translate(capital);	
+	text-transform: uppercase;
 	font-size:2rem;
 }
-main p{
+.content p{
 	width:50%;
-	height:auto;
+	margin-top: 8rem;
+	margin-left: 6rem;
+	font-size: 2rem;
 	color:lightgray;
+	text-align: justify;
 }
-main img{
-	float:left;
+.content img{
 	width:500px;
 	height:300px;
+	float: right;
+	margin-top: -18em;
 }
 footer{
 	width:100%;
-	height:auto;
-	background-color:#fff;
+	height:100px;
+	background-color:#000000;
+	margin-top: 5px;
+	padding: 10px;
 }
 
 
